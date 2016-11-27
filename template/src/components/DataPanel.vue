@@ -4,7 +4,7 @@
         <button @click="createPlan">+ 新建文章</button>
         
         <drop-list :params="{mod:'command', title: '批量操作', disabled: true}"
-            @select-change="changeCommand" ref="batch">
+            @select-change="changeCommand" v-ref:batch>
             <ul>
                 <li>删除</li>
                 <li>修改</li>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <rich-table :params="tableConf"
-          @selected-changed="changeSelected" ref="table">
+          @selected-changed="changeSelected" v-ref:table>
         </rich-table>
     <pager
         :params="pageInfo"

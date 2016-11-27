@@ -19,8 +19,8 @@ module.exports = {
       'src': path.resolve(__dirname, '../src'),
       'vue': 'vue/dist/vue.js',
       'assets': path.resolve(__dirname, '../src/assets'),
-      'smui': 'smui-next',
-      // 'smui': '/Users/liuliandong/work/workspace/smui/asset',
+      // 'smui': 'smui-next',
+      // 'smui': '/Users/liuliandong/work/workspace/smui/dist',
       'components': path.resolve(__dirname, '../src/components')
     }
   },

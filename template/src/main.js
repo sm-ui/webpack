@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from 'components/App.vue'
 
+console.log('Vue.version = [%s]' , Vue.version)
+
 require('smui/style/skin.less')
 require('./css/main.less')
 

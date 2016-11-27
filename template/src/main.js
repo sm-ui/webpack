@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from 'components/App.vue'
 
 require('smui/style/skin.less')
+require('./css/main.less')
 
 let dataList = new Array(100).fill(8).map(
     (item, idx) => {
@@ -68,7 +69,7 @@ let searchTitle = ''
 
 
 
-let AppDemo = Vue.extend({
+let AppDemo = {
     extends: App,
     data() {
         return {
@@ -81,9 +82,8 @@ let AppDemo = Vue.extend({
             }
         }
     }
-})
+}
 
 let app = new Vue({
-    el: 'body',
     components: {App: AppDemo}
-})
+}).$mount('#main')

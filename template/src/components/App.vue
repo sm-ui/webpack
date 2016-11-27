@@ -12,27 +12,15 @@
         <setting></setting>
         <tab :params="{items: params.tabList, tab: tab, subTab: subTab}"
           @tab-change="changeTab"></tab>
-        <data-panel :items="params.dataList" v-if="tab == 'table'"></data-panel>
-        <!-- <form-panel v-if="tab == 'form'"></form-panel> -->
-  <!--       <div v-if="tab == 'dialog'">
-          <message-panel v-if="subTab == 'message'" ></message-panel>
-          <dialog-panel v-if="subTab == 'dialog'" ></dialog-panel>
-        </div> -->
+        <data-panel :items="params.dataList"></data-panel>
     </div>
 </div>
 </template>
 
 <script type="text/javascript">
 import DataPanel from './DataPanel.vue'
-// import FormPanel from './Form.vue'
-// import MessagePanel from './Message.vue'
-// import DialogPanel from './Dialog.vue'
 import Setting from './Setting.vue'
-
-import PressTab from 'smui/PressTab'
-
 import {Tab, SearchBox, Scrum, Tree} from 'smui'
-
 
 export default {
     data () {
@@ -52,8 +40,7 @@ export default {
         }
     },
     components: {
-        // DataPanel, MessagePanel, DialogPanel, Setting,
-        DataPanel, PressTab, SearchBox, Tree, Tab, Scrum, Setting
+        DataPanel, SearchBox, Tree, Tab, Scrum, Setting
     }
 }
 </script>

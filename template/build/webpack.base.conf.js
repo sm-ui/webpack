@@ -17,7 +17,10 @@ module.exports = {
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
       'src': path.resolve(__dirname, '../src'),
+      'vue': 'vue/dist/vue.js',
       'assets': path.resolve(__dirname, '../src/assets'),
+      'smui': 'smui-next',
+      // 'smui': '/Users/liuliandong/work/workspace/smui/asset',
       'components': path.resolve(__dirname, '../src/components')
     }
   },
@@ -53,13 +56,6 @@ module.exports = {
       {
         test: /\.less$/,
         loader: 'less'
-      },
-      {
-        test: /\.(png|jpg|gif|svg|ttf)$/,
-        loader: 'file',
-        query: {
-          name: '[name].[ext]?[hash]'
-        }
       },
       {
         test: /\.json$/,

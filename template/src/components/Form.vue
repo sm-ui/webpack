@@ -1,6 +1,6 @@
 <template>
 <div class="test-form">
-<post-form :params="{open: false}">
+<post-form v-ref:form>
     <div class="line">
         <label>标题</label>
         <input type="text" v-field="{name: 'title'}" maxlength="32">
@@ -29,7 +29,7 @@
         <field-tip :params="{left: 30}"></field-tip>
     </div>
     <div class="line">
-        <button>确定</button>
+        <button @click="submit">确定</button>
     </div>
 </post-form>
 </div>
@@ -38,9 +38,23 @@
 <script type="text/javascript">
 import ui from 'smui/base/ui'
 import Field from 'smui/directive/field'
-import validator from 'validator/index'
+import validator from 'wali'
 import PostForm from 'smui/PostForm'
 import Info from 'smui/Info'
+import Dialog from 'smui/Dialog'
+
+validator.extendRules({
+    title: {
+        maxByteLength: {
+            value: 12,
+            message: '标题最多12个字符'
+        },
+        minByteLength: {
+            value: 1,
+            message: '标题不能为空'
+        }
+    }
+})
 
 validator.setSiteUrls('http://e.sm.cn/')
 
@@ -64,6 +78,11 @@ export default {
     methods: {
         change(e) {
             validator.check(e.value)
+        },
+        submit() {
+            if (this.$refs.form.validate()) {
+                Dialog.alert('提交成功')
+            }
         }
     }
 }

@@ -6,7 +6,7 @@
 2. 安装webpack
 3. 安装vue-cli
 
-** 建议 **
+*建议*
 
 * 安装cnpm
 
@@ -14,7 +14,11 @@
 
 ```sh
 
-vue init sm-ui/webpack#v1 # for vue1.0 project
+# vue1.x project
+vue init sm-ui/webpack#v1 
+
+# vue2.x project
+# vue init sm-ui/webpack#v2
 
 # fetch remote template
 cd project

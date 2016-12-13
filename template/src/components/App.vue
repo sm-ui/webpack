@@ -4,7 +4,6 @@
         <div class="tree-title">
             <a>全部文章</a>
         </div>
-        <search-box :title="params.searchTitle"></search-box>
         <tree :params="{items: params.treeData}"></tree>
     </div>
     <div class="mright">

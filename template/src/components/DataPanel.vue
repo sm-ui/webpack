@@ -38,6 +38,7 @@
 <script type="text/javascript">
 
 import smui from 'smui'
+import Form from './Form.vue'
 import tableConf from './tableConf'
 import RichTable from 'smui/RichTable'
 import Dialog from 'smui/Dialog'

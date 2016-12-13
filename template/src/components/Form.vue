@@ -36,7 +36,7 @@
 </template>
 
 <script type="text/javascript">
-import ui from 'smui/ui'
+import ui from 'smui/base/ui'
 import Field from 'smui/directive/field'
 import validator from 'validator/index'
 import PostForm from 'smui/PostForm'
@@ -49,7 +49,7 @@ Field.check = validator.check
 
 import FieldTip from 'smui/FieldTip'
 
-params = {
+var params = {
     item: {
         title: '标题',
         desc: '描述',

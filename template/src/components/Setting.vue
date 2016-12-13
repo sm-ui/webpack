@@ -13,7 +13,9 @@
 <script type="text/javascript">
 
 import smui from 'smui'
-// import Dialog from 'smui/Dialog'
+import Dialog from 'smui/Dialog'
+import Form from './Form.vue'
+
 // import Schedule from 'smui/Schedule'
 // import LineBox from 'smui/LineBox'
 

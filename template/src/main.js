@@ -68,9 +68,6 @@ let scrumList = [
 
 let searchTitle = ''
 
-
-
-
 let AppDemo = {
     extends: App,
     data() {

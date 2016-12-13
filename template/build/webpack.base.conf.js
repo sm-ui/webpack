@@ -20,7 +20,7 @@ module.exports = {
       'vue': 'vue/dist/vue.js',
       'assets': path.resolve(__dirname, '../src/assets'),
       // 'smui': 'smui-next',
-      // 'smui': '/Users/liuliandong/work/workspace/smui/dist',
+      // 'smui': '/Users/liuliandong/work/workspace/smui/develop/output/smui',
       'components': path.resolve(__dirname, '../src/components')
     }
   },

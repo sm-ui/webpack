@@ -49,7 +49,7 @@ Field.check = validator.check
 
 import FieldTip from 'smui/FieldTip'
 
-params = {
+const params = {
     item: {
         title: '标题',
         desc: '描述',

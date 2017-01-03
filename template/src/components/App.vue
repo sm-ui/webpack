@@ -4,7 +4,6 @@
         <div class="tree-title">
             <a>全部文章</a>
         </div>
-        <search-box :title="params.searchTitle"></search-box>
         <tree :params="{items: params.treeData}"></tree>
     </div>
     <div class="mright">
@@ -20,7 +19,7 @@
 <script type="text/javascript">
 import DataPanel from './DataPanel.vue'
 import Setting from './Setting.vue'
-import {Tab, SearchBox, Scrum, Tree} from 'smui'
+import {Tab, Scrum, Tree} from 'smui'
 
 export default {
     data () {
@@ -40,7 +39,7 @@ export default {
         }
     },
     components: {
-        DataPanel, SearchBox, Tree, Tab, Scrum, Setting
+        DataPanel, Tree, Tab, Scrum, Setting
     }
 }
 </script>

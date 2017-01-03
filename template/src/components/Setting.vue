@@ -13,9 +13,9 @@
 <script type="text/javascript">
 
 import smui from 'smui'
-// import Dialog from 'smui/Dialog'
-// import Schedule from 'smui/Schedule'
-// import LineBox from 'smui/LineBox'
+import Dialog from 'smui/Dialog'
+import Schedule from 'smui/Schedule'
+import LineBox from 'smui/LineBox'
 
 export default {
     components: smui,

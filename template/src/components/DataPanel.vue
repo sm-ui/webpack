@@ -41,6 +41,7 @@ import smui from 'smui'
 import tableConf from './tableConf'
 import RichTable from 'smui/RichTable'
 import Dialog from 'smui/Dialog'
+import Form from './Form'
 
 let dataList = new Array(100).fill(1).map(
     (item, idx) => {

@@ -14,12 +14,9 @@
     "babel-core": "^6.0.0",
     "babel-runtime": "^6.0.0",
     "babel-standalone": "^6.21.1-0",
-    "cn-city": "^0.0.1",
-    "codemirror": "^5.22.0",
-    "cssicon": "^1.0.0",
     "less": "^2.7.1",
-    "light.js": "^0.2.4",
     "raw-loader": "^0.5.1",
+    "smui-next": "^0.0.13",
     "vue": "2.1.5",
     "vue-loader": "^10.0.2",
     "vue-router": "^2.1.1",
@@ -31,30 +28,6 @@
     "presets": [
       "es2015"
     ]
-  },
-  "buildConf": {
-    "output": "./output/msui",
-    "dist": "./output/msui",
-    "version": "2",
-    "source": "./source",
-    "main": "index.js",
-    "bundle": "bundle.js"
-  },
-  "buildV2": {
-    "output": "./output/msui",
-    "dist": "./output/msui",
-    "version": "2",
-    "source": "./source",
-    "main": "index.js",
-    "bundle": "bundle.js"
-  },
-  "buildV1": {
-    "output": "./output/smui",
-    "version": "1",
-    "fixV1": "1",
-    "source": "./source",
-    "main": "index.js",
-    "bundle": "bundle.js"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",

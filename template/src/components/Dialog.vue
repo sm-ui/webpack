@@ -1,6 +1,6 @@
 <template>
 <div class="dialog-panel-demo">
-    <inline-dialog v-ref:dialog>
+    <inline-dialog ref="dialog">
         <div slot="title">表头</div>
         <div slot="content">
             <form-panel></form-panel>

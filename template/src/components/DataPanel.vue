@@ -4,7 +4,7 @@
         <button @click="createPlan">+ 新建文章</button>
         
         <drop-list :params="{mod:'command', title: '批量操作', disabled: true}"
-            @select-change="changeCommand" v-ref:batch>
+            @select-change="changeCommand" ref=batch>
             <ul>
                 <li>删除</li>
                 <li>修改</li>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <rich-table :params="tableConf"
-          @selected-changed="changeSelected" v-ref:table>
+          @selected-changed="changeSelected" ref=table>
         </rich-table>
     <pager
         :params="pageInfo"
@@ -42,7 +42,6 @@ import Form from './Form.vue'
 import tableConf from './tableConf'
 import RichTable from 'smui/RichTable'
 import Dialog from 'smui/Dialog'
-import Form from './Form'
 
 let dataList = new Array(100).fill(1).map(
     (item, idx) => {

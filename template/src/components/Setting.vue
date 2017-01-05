@@ -11,11 +11,13 @@
 </template>
 
 <script type="text/javascript">
+import Vue from 'vue'
 
 import smui from 'smui'
 import Dialog from 'smui/Dialog'
 import Schedule from 'smui/Schedule'
 import LineBox from 'smui/LineBox'
+window.Vue = Vue
 
 export default {
     components: smui,
